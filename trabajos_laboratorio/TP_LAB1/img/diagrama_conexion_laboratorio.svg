@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Diagrama de conexion del banco de laboratorio</title>
+  <desc id="description">El generador alimenta la entrada Vi del filtro. El osciloscopio mide Vi en el canal 1 y Vo en el canal 2. Las fuentes regulables alimentan el filtro.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#36454f" />
+    </marker>
+    <style>
+      .box { stroke: #36454f; stroke-width: 3; }
+      .line { fill: none; stroke: #36454f; stroke-width: 3; marker-end: url(#arrow); }
+      .supply { fill: none; stroke: #36454f; stroke-width: 3; stroke-dasharray: 10 8; marker-end: url(#arrow); }
+      .label { font-family: sans-serif; fill: #17212b; text-anchor: middle; font-size: 28px; }
+      .small { font-family: sans-serif; fill: #17212b; text-anchor: middle; font-size: 22px; }
+    </style>
+  </defs>
+  <rect width="1200" height="620" fill="#fafafa" />
+  <rect class="box" x="70" y="100" width="230" height="160" rx="4" fill="#b8d7a8" />
+  <text class="label" x="185" y="163">Generador de</text>
+  <text class="label" x="185" y="198">senales</text>
+  <rect class="box" x="455" y="70" width="290" height="185" rx="4" fill="#f6c992" />
+  <line x1="455" y1="157" x2="745" y2="157" stroke="#36454f" stroke-width="3" />
+  <text class="label" x="600" y="133">Osciloscopio</text>
+  <text class="small" x="527" y="205">Canal 1 (Vi)</text>
+  <text class="small" x="672" y="205">Canal 2 (Vo)</text>
+  <rect class="box" x="890" y="100" width="240" height="160" rx="4" fill="#df806d" />
+  <text class="label" x="1010" y="162">Fuentes</text>
+  <text class="label" x="1010" y="197">regulables</text>
+  <rect class="box" x="380" y="380" width="440" height="150" rx="4" fill="#ffffff" />
+  <text class="label" x="600" y="435">DUT: filtro activo</text>
+  <text class="label" x="600" y="473">basado en TL082</text>
+  <text class="small" x="416" y="555">Entrada Vi</text>
+  <text class="small" x="784" y="555">Salida Vo</text>
+  <path class="line" d="M185 260 L185 455 L380 455" />
+  <path class="line" d="M527 255 L527 335 L420 335 L420 380" />
+  <path class="line" d="M672 255 L672 335 L780 335 L780 380" />
+  <path class="supply" d="M1010 260 L1010 325 L755 325 L755 380" />
+</svg>

@@ -1,0 +1,8 @@
+referencia,cantidad,componente,valor,detalle,notas
+U1,1,Op-amp,TL072/TL082/NE5532/LM358,Sallen-Key en ganancia unitaria,Elegir segun alimentacion disponible
+R1 R2 R3,3,Resistencia,9.1 kOhm,1/4 W 1% metal film,En serie con preset para ajustar a 10 kOhm
+PR1 PR2 PR3,3,Preset multiturno,2 kOhm,Trimmer en serie con cada resistencia,Ajuste inicial para R total = 10 kOhm
+C1a,1,Capacitor,3.3 nF,Pelicula o ceramico C0G/NP0,Serie con C1b
+C1b,1,Capacitor,8.2 nF,Pelicula o ceramico C0G/NP0,Serie con C1a; C1eq = 2.35304 nF
+C2a C2b,2,Capacitor,2.2 nF,Pelicula o ceramico C0G/NP0,Paralelo; C2eq = 4.4 nF
+C3,1,Capacitor,3.3 nF,Pelicula o ceramico C0G/NP0,RC de primer orden
