@@ -210,3 +210,19 @@ __marimo__/
 *.log
 *.raw
 *.net
+
+# STM32CubeIDE build artifacts
+**/Debug/
+**/Release/
+**/build/
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.axf
+*.hex
+*.bin
+*.map
+*.list
+*.lst
